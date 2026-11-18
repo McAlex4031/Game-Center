@@ -281,6 +281,7 @@ footer p + p {
    NAVIGATION INFÉRIEURE
 ===================================================== */
 
+
 .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -292,13 +293,14 @@ footer p + p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: clamp(25px, 8vw, 65px);
 
     background: #191919;
     border-top: 1px solid var(--border);
 
     z-index: 100;
 }
+
 
 .bottom-nav-item {
     width: 45px;
