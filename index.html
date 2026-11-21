@@ -77,33 +77,36 @@
 
         <!-- LISTE DES JEUX -->
 
-        <section class="games-section"
-                 aria-labelledby="games-title">
+<!-- RÉCEMMENT JOUÉS -->
+<section class="games-section">
+    <h2>Récemment joués</h2>
+    <div id="recent-games" class="games-grid"></div>
+</section>
 
-            <h2 id="games-title">
-                Jeux
-            </h2>
+<!-- FAVORIS -->
+<section class="games-section">
+    <h2>Mes favoris</h2>
+    <div id="favorite-games" class="games-grid"></div>
+</section>
 
-            <!--
-                Les cartes des jeux seront
-                générées automatiquement en JavaScript.
-            -->
+<!-- POPULAIRES -->
+<section class="games-section">
+    <h2>Populaires cette semaine</h2>
+    <div id="popular-games" class="games-grid"></div>
+</section>
 
-            <div
-                id="games"
-                class="games-grid"
-                aria-label="Liste des jeux"
-            >
+<!-- DÉCOUVRIR -->
+<section class="games-section">
+    <h2>Découvrir</h2>
+    <div id="discover-games" class="games-grid"></div>
+</section>
 
-            </div>
-
-            <!-- Message si aucun jeu ne correspond -->
-
-            <p id="no-games" hidden>
-                Aucun jeu trouvé désolé.
-            </p>
-
-        </section>
+<!-- RÉSULTATS DE RECHERCHE -->
+<section class="games-section" id="search-section" hidden>
+    <h2>Résultats de recherche</h2>
+    <div id="games" class="games-grid"></div>
+    <p id="no-games" hidden>Aucun jeu trouvé.</p>
+</section>
 
     </main>
 
@@ -223,24 +226,6 @@
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M96 192C96 130.1 146.1 80 208 80C269.9 80 320 130.1 320 192C320 253.9 269.9 304 208 304C146.1 304 96 253.9 96 192zM32 528C32 430.8 110.8 352 208 352C305.2 352 384 430.8 384 528L384 534C384 557.2 365.2 576 342 576L74 576C50.8 576 32 557.2 32 534L32 528zM464 128C517 128 560 171 560 224C560 277 517 320 464 320C411 320 368 277 368 224C368 171 411 128 464 128zM464 368C543.5 368 608 432.5 608 512L608 534.4C608 557.4 589.4 576 566.4 576L421.6 576C428.2 563.5 432 549.2 432 534L432 528C432 476.5 414.6 429.1 385.5 391.3C408.1 376.6 435.1 368 464 368z"/></svg>
 
-
-        <!-- PROFIL -->
-
-        <a
-            href="profil.html"
-            class="bottom-nav-item"
-            aria-label="Profil"
-            title="Profil"
-        >
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 640"
-                aria-hidden="true"
-            >
-                <path d="M463 448.2C440.9 409.8 399.4 384 352 384L288 384C240.6 384 199.1 409.8 177 448.2C212.2 487.4 263.2 512 320 512C376.8 512 427.8 487.3 463 448.2zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320zM320 336C359.8 336 392 303.8 392 264C392 224.2 359.8 192 320 192C280.2 192 248 224.2 248 264C248 303.8 280.2 336 320 336z"/>
-            </svg>
-
         </a>
 
     </nav>
@@ -249,9 +234,10 @@
 
     <!-- =====================================================
          JAVASCRIPT
-    ====================================================== -->
+    ======================================================= -->
 
-    <!-- Les scripts seront ajoutés progressivement -->
+   <script src="js/avatar.js"></script>
+   <script src="js/games.js"></script>
 
 </body>
 
